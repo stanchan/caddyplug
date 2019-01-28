@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/abiosoft/caddyplug/internal"
+	"github.com/stanchan/caddyplug/internal"
 )
 
 const (

@@ -21,7 +21,7 @@ type dependencies []struct {
 var packageDependecies = dependencies{
 	{name: "caddy", importPath: "github.com/mholt/caddy", updateFunc: fetchCaddy},
 	{name: "dnsproviders", importPath: "github.com/caddyserver/dnsproviders", updateFunc: fetchDNSProviders},
-	{name: "hook.pluginloader", importPath: "github.com/abiosoft/caddyplug", updateFunc: fetchCaddyPlug},
+	{name: "hook.pluginloader", importPath: "github.com/stanchan/caddyplug", updateFunc: fetchCaddyPlug},
 }
 
 func (d dependencies) installed() bool {
@@ -98,7 +98,7 @@ func fetchCaddy() error {
 }
 
 func fetchCaddyPlug() error {
-	return install("github.com/abiosoft/caddyplug")
+	return install("github.com/stanchan/caddyplug")
 }
 
 func fetchDNSProviders() error {

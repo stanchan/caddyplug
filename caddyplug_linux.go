@@ -7,7 +7,7 @@ import (
 	"plugin"
 	"strings"
 
-	"github.com/abiosoft/caddyplug/internal"
+	"github.com/stanchan/caddyplug/internal"
 )
 
 func init() {

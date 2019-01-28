@@ -111,7 +111,7 @@ func listPlugins([]string) {
 const (
 	pluginLoaderFile = "caddy/caddymain/pluginloader.go"
 	pluginLoaderSrc  = `package caddymain
-	import _ "github.com/abiosoft/caddyplug"`
+	import _ "github.com/stanchan/caddyplug"`
 )
 
 func installCaddy([]string) {
